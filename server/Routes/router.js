@@ -48,7 +48,7 @@ router.get("/getusers",(req,res)=>{
 });
 
 
-//deleted user
+// deleted user
 router.delete("/deleteuser/:id",(req,res)=>{
 
     const {id} = req.params;
@@ -62,7 +62,7 @@ router.delete("/deleteuser/:id",(req,res)=>{
     })
 });
 
-//get insert user
+// insert user
 
 router.get("/insertuser/:id",(req,res)=>{
 
@@ -74,9 +74,26 @@ router.get("/insertuser/:id",(req,res)=>{
         }else{
             res.status(201).json(result);
         }
-    });
-})
+    })
+});
 
+
+// update users api
+
+router.patch("/updateuser/:id",(req,res)=>{
+
+    const {id} = req.params; 
+
+    const data = req.body;
+
+    conn.query("UPDATE users SET ? WHERE id = ?", [data,id],(err,result)=>{
+        if(err){
+            res.status(422).json({message:"error"});
+        }else{
+            res.status(201).json(result);
+        }
+    })
+});
 
 module.exports = router;
 

@@ -25,7 +25,7 @@ const ContextProvider = ({ children }) => {
     )
 }
 
-export default ContextProvider;
+export default ContextProvider
 
 
 
