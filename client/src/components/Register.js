@@ -11,7 +11,7 @@ const Register = () => {
     const [inpval, setINP] = useState({
         name: "",
         subname: "",
-        email: "",
+        email: ""
     })
 
     const setdata = (e) => {
