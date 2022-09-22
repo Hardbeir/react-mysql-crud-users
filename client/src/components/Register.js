@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
-import { adddata } from './context/ContextProvider';
+import { adddata } from './context/ContextProvider'
 
 const Register = () => {
 
@@ -35,7 +35,7 @@ const Register = () => {
         if (name == "") {
             alert("name is required")
         } else if (subname == ""){
-            alert("name is required")
+            alert("subname is required")
         } else if (email == "") {
             alert("email is required")
         } else if (!email.includes("@")) {

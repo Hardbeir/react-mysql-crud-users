@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react'
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import { NavLink } from 'react-router-dom';
-import { adddata, deldata } from './context/ContextProvider';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye'
+import CreateIcon from '@mui/icons-material/Create'
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
+import { NavLink } from 'react-router-dom'
+import { adddata, deldata } from './context/ContextProvider'
 import { updatedata } from './context/ContextProvider'
 
 
@@ -14,7 +14,7 @@ const Home = () => {
     const [getuserdata, setUserdata] = useState([]);
     console.log(getuserdata);
 
-    const { udata, setUdata } = useContext(adddata);
+    const {udata, setUdata } = useContext(adddata);
 
     const {updata, setUPdata} = useContext(updatedata);
 
@@ -115,7 +115,6 @@ const Home = () => {
                                 <th scope="col">Name</th>
                                 <th scope="col">Subname</th>
                                 <th scope="col">Email</th>
-                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>

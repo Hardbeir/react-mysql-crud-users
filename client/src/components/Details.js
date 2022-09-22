@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { NavLink, useParams, useHistory } from 'react-router-dom';
+import CreateIcon from '@mui/icons-material/Create'
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import { NavLink, useParams, useHistory } from 'react-router-dom'
 
 
 const Details = () => {

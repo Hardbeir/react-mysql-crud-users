@@ -1,18 +1,18 @@
-const express = require("express");
-const app = express();
-const mysql = require("mysql2");
-const cors = require("cors")
-require("./db/conn");
-const router = require("./Routes/router");
+const express = require("express")
+const app = express()
+const mysql = require("mysql2")
+const cors = require("cors")   //cross-origin Resource Sharing
+require("./db/conn")
+const router = require("./Routes/router")
 
-const port = 8082;
+const port = 8001;
 
 /* app.get("/",(req,res)=>{
     res.send("server starting")
 }); */
 
 
-app.use(express.json())
+app.use(express.json());
 app.use(cors());
 
 app.use(router);
