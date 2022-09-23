@@ -3,11 +3,10 @@ const router = new express.Router();
 const conn = require("../db/conn");
 
 
-//registration users
+//add users
 
 router.post("/create", (req, res)=>{
 
-   /*  console.log(req.body); */
 
 const {name, subname, email} = req.body;
 
@@ -24,7 +23,7 @@ try{
                 if(err){
                     console.log("err" + err);
                 }else{
-                    res.status(201).json(req,body);
+                    res.status(201).json(req.body);
                 }
             })
         }
@@ -35,7 +34,7 @@ try{
 
 });
 
-// get users 
+// select users 
 
 router.get("/getusers",(req,res)=>{
     conn.query("SELECT * FROM users",(err, result) =>{
