@@ -5,7 +5,7 @@ const conn = require("../db/conn");
 
 //registration users
 
-router.post("/create", (req, ser)=>{
+router.post("/create", (req, res)=>{
 
    /*  console.log(req.body); */
 
