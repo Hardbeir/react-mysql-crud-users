@@ -6,12 +6,7 @@ const cors = require("cors")   //cross-origin Resource Sharing
 require("./db/conn")
 const router = require("./Routes/router")
 
-const port = 8001;
-
-/* app.get("/",(req,res)=>{
-    res.send("server starting")
-}); */
-
+const port = 3001;
 
 app.use(express.json());
 app.use(cors());
